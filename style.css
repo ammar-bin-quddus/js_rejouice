@@ -1,0 +1,263 @@
+@font-face {
+    font-family: nb;
+    src: url(./font/NBInternationalProBoo.woff2);
+}
+
+@font-face {
+    font-family: rejou;
+    src: url(./font/Rejouice-Headline.woff2);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#cursor {
+    height: 7.2vw;
+    width: 7.2vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h5 {
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: rgb(0, 0, 0); */
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 2vw;
+    font-family: 'nb';
+}
+
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+nav h4 {
+    font-size: 1.2vw;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#page1-content h1 {
+    font-size: 27vw;
+    /* padding-bottom: 1.5vw; */
+    font-family: "rejou";
+    line-height: 25vw;
+    font-weight: 550;
+}
+
+#page1-content h1 span {
+    font-family: rejou;
+    display: inline-block;
+}
+
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+}
+
+#upper {
+    height: 20%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background-color: #FF5F38; */
+}
+
+#upper h2 {
+    font-size: 21.3333px;
+    font-weight: 400;
+    line-height: 24.32px;
+    color: rgb(14, 14, 14);
+}
+
+#divider {
+    width: 95%;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 2vw 0vw 0vw 2.5vw;
+}
+
+.lower {
+    height: 80%;
+    width: 100%;
+    text-align: left;
+    padding: 1vw 0vw 8vw 2.5vw;
+}
+
+.lower h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: rgb(14, 14, 14);
+}
+
+#page3 {
+    height: 80vh;
+    width: 100%;
+    /* background-color: #FF5F38; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2.5vw 0vw 2vw;
+}
+
+.box {
+    position: relative;
+    height: 100%;
+    width: 32.5%;
+    /* background-color: black; */
+}
+
+.box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 5px; */
+    cursor: pointer;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box:hover img {
+    opacity: 0;
+    transition: all linear 0.7s;
+}
+
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: #000; */
+    position: relative;
+}
+
+#cursor2 {
+    height: 7.2vw;
+    width: 7.2vw;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+#page4 video {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    position: absolute;
+}
+
+#page4 svg {
+    margin-top: 120px;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+}
+
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+    padding: 7vh 0vh;
+}
+
+#page5-top {
+    width: 96%;
+    margin-left: 2%;
+    background-color: red;
+}
+
+#page5 h1 {
+    font-size: 20vh;
+    font-family: rejou;
+    border-bottom: 2px solid black;
+}
+
+#swiperdiv {
+    height: 60vh;
+    width: 100%;
+    background-color: #000;
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
